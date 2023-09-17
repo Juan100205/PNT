@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verificación de Edad</title>
+    <script>
+        function verificarEdad() {
+            // Obtener el año de nacimiento ingresado por el usuario
+            var añoNacimiento = parseInt(document.getElementById("añoNacimiento").value);
+
+            // Obtener el año actual
+            var añoActual = new Date().getFullYear();
+
+            // Calcular la edad del usuario
+            var edad = añoActual - añoNacimiento;
+
+            // Verificar si la edad está dentro del rango permitido
+            if (edad >= 18 && edad <= 55) {
+                alert("¡Felicidades! Eres elegible para el trabajo.");
+            } else {
+                alert("Lo siento, no cumples con el requisito de edad para el trabajo.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Verificación de Edad</h1>
+    <label for="añoNacimiento">Ingresa tu año de nacimiento:</label>
+    <input type="text" id="añoNacimiento" />
+    <button onclick="verificarEdad()">Verificar Edad</button>
+</body>
+</html>

@@ -1,0 +1,16 @@
+.header_title{
+    height: 120px;
+    background-color: rgba(0, 0, 0, 1);
+}
+.bold-text {
+    font-weight: bold;
+  }
+  .white {
+    color: white;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: bold;
+  }
+  .Texture{
+    height:120px;
+    background-color: rgba(0, 0, 0, 2.5);
+    }
