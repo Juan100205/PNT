@@ -1,5 +1,6 @@
-.header{
-    background-color:yellow;
-    text-size-adjust: 300px;
-    height: 100px;
+
+.text_config{
+    font-size: 55px;
+    color: #011B40 ;
+    font-family: 'PT Serif', serif
 }

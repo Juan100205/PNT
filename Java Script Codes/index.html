@@ -1,48 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Retiro de Efectivo en el Cajero Automático</title>
-    <script>
-      // Clave de acceso correcta
-      var pinCorrecto = "1234";
-
-      // Número de intentos restantes para ingresar el PIN
-      var intentosRestantes = 3;
-
-      function retirarEfectivo() {
-        // Obtener el PIN ingresado por el usuario
-        var pinIngresado = document.getElementById("pin").value;
-
-        // Verificar si el PIN es correcto
-        if (pinIngresado === pinCorrecto) {
-          // Si es correcto, obtener el monto de retiro ingresado por el usuario
-          var montoRetiro = parseFloat(
-            document.getElementById("montoRetiro").value
-          );
-          alert("Operación exitosa. Has retirado $" + montoRetiro);
-        } else {
-          // Si el PIN es incorrecto, reducir el número de intentos restantes
-          intentosRestantes--;
-
-          if (intentosRestantes > 0) {
-            alert(
-              "PIN incorrecto. Por favor, inténtalo de nuevo. Te quedan " +
-                intentosRestantes +
-                " intentos."
-            );
-          } else {
-            // Si se agotan los intentos, bloquear la tarjeta
-            alert("Tu tarjeta ha sido bloqueada.");
-            document.getElementById("pin").disabled = true;
-            document.getElementById("montoRetiro").disabled = true;
-            document.getElementById("botonRetirar").disabled = true;
-          }
-        }
-      }
-    </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ejercicio JS 1</title>
+    <title>Sabana's bank Web Page</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -52,40 +13,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500&family=IBM+Plex+Sans:wght@100&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap"
+      href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script></script>
   </head>
-  <body>
-    <div class="header text-center">
-      <h1>Banco Pichincha</h1>
+  <header class="">
+    <nav class="navbar bg-body-primary"style="background-color: #D0C78F  ;">
+    <div class="container-fluid">
+    <div class=" navbar-brand col-lg-2">
+      <img src="Unisabana (1).png" width="60" height="75" alt="Logo" class="d-inline-block align-text-top header" /> 
+
     </div>
-    <div class="pt-5 text-center mb-3">
-      <div class="row">
-        <div class="col-6 content-aling-right ">
-            <label for="PIN" class="form-label">Ingresa tu PIN:</label>
-        </div>
-        <div class="col-6">
-            <input type="password" class="form-control" id="pin" aria-describedby="INPUTPIN">
-        </div>
-        <br />
-      </div>
-      <div class="pt-2">
-        <label for="montoRetiro">Ingresa el monto a retirar:</label>
-        <input type="number" id="montoRetiro" />
-        <br />
-      </div>
-      <div class="pt-2"></div>
-      <button id="botonRetirar" onclick="retirarEfectivo()">
-        Retirar Efectivo
-      </button>
-    </div>
-  </body>
+<div class="text_config col lg-4">
+  Sabana's Bank
+</div>
+  </div>
+  <div class="col-lg-6"></div>
+</nav>
+  </header>
+  
 </html>
